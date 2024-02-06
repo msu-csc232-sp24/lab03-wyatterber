@@ -2,6 +2,7 @@
  * CSC232 - Data Structures
  * Missouri State University, Spring 2024
  *
+ *
  * @file    csc232.h
  * @author  Jim Daehn <jdaehn@missouristate.edu>
  * @brief   Macros, libraries and definitions for use in csc232 assignments.
@@ -18,7 +19,7 @@
 #define TRUE 1
 #define EXECUTE_BLOCK FALSE
 
-#define FINISHED_PART_1 FALSE
+#define FINISHED_PART_1 TRUE
 #define FINISHED_PART_2 FALSE
 #define FINISHED_PART_3 FALSE
 
@@ -62,7 +63,14 @@ namespace csc232
 {
 #if FINISHED_PART_1
     // TODO: Task 1 - Declare your Dog interface below (but before the #endif)
+class Dog{
+public:
+    virtual std::string speak() const = 0;
 
+    virtual void sit() const = 0;
+
+    virtual ~Dog() = default;
+};
 #endif // FINISHED_PART_1
 
 #if FINISHED_PART_2
