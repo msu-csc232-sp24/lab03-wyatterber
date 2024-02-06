@@ -83,7 +83,7 @@ class Yorkie : public Dog{
 }
     // TODO: Task 2.a.2 - Add your Yorkie definition below
 Yorkie::Yorkie(const std::string& dogs_name) : {dogs_name}{
-    std::cout << "A yorkie named " << name << " was just created" << std::endl;
+    std::cout << "A yorkie named " << name << " was just created." << std::endl;
 }
 std::string Yorkie ::speak(const){
     std:: string response {"DID YOU SAY SPEAK?"};
@@ -92,9 +92,22 @@ void Yorkie::sit() const{
     std::cout << "A yorkie named " << name << " just sat down." << std::endl;
 }
     // TODO: Task 2.b.1 - Declare your GreatDaehn class for Task 2b below
-
+class GreatDaehn : public Dog{
+    public:
+         GreatDaehn (const std::string & dogs_name);
+         std::string speak() const override;
+         void sit() const override;
+    private: string name;
     // TODO: Task 2.b.2 - Add your GreatDaehn definition below (before the #endif)
-
+GreatDaehn::GreatDaehn(const std::string& dogs_name) : {dogs_name}{
+    std::cout << "A Great Daehn named " << name << " was just created." << std::endl;
+}
+std::string GreatDaehn:: speak(const){
+    std:: string response {"What?"};
+}
+void GreatDaehn::sit() const{
+    std::cout << "A Great Daehn named " << name << " just sat down." << std::endl;
+}
 #endif // FINISHED_PART_2
 
     // DO NOT Modify anything below this line
